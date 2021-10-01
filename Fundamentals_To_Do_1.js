@@ -91,3 +91,30 @@ while (num <= 60000){
     console.log(index);
     num++
 }
+
+//Print integers 1 to 100. If divisible by 5, print "Coding" instead. If by 10, also print " Dojo".
+for(var i = 1; i <= 100; i++)
+{
+    if(i % 5 == 0)
+    {
+        console.log("Coding");
+        if(i % 10 == 0)
+        {
+            console.log("Dojo");
+        }
+    }
+    else
+    {
+        console.log(i);
+    }
+    
+}
+
+//Your function will be given an input parameter incoming. Please console.log this value.
+function message(incoming){
+        console.log(incoming);
+}
+
+message("Hello World!");
+
+//Add odd integers from -300,000 to 300,000, and console.log the final sum. Is there a shortcut?
