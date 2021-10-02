@@ -118,3 +118,29 @@ function message(incoming){
 message("Hello World!");
 
 //Add odd integers from -300,000 to 300,000, and console.log the final sum. Is there a shortcut?
+var sum = 0;
+for (var i = -300000; i <= 300000; i++  )
+{
+    if (i % 2 !==0)
+    {
+        sum += i
+    }
+    
+}
+
+console.log(sum)
+
+//Log positive numbers starting at 2016, counting down by fours (exclude 0), without a FOR loop
+function countdown(num){
+
+    while(num > 1)
+{
+    console.log(num);
+    num = num - 4;
+}
+
+}
+
+countdown(2016);
+
+//
