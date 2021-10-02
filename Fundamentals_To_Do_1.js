@@ -75,7 +75,29 @@ birthday(3, 6);
 //If a year is divisible by four, it is a leap year, 
 //unless it is divisible by 100. However, if it is divisible by 400, then it is.
 
+function leapYear(year)
+{
+    if(year % 4 == 0)
+    {
+        if(year % 100 == 0)
+        {
+            if (year % 400 == 0)
+            {
+                console.log("It is a leap year!") 
+            }
+            else
+            {
+                console.log("It is a not a leap year")
+            }
+        }
+        else
+        {
+            console.log("It is a leap year!") 
+        }
+    }
+}
 
+leapYear(4000);
 
 //Print all integer multiples of 5, from 512 to 4096. Afterward, also log how many there were.
 for (var num = 512; num <= 4096; num++){
@@ -143,4 +165,44 @@ function countdown(num){
 
 countdown(2016);
 
-//
+//Based on earlier “Countdown by Fours”, given lowNum, highNum, mult, print multiples 
+//of mult from highNum down to lowNum, using a
+// FOR. For (2,9,3), print 9 6 3 (on successive lines).
+
+function countMult(lowNum, highNum, mult)
+{
+    for(highNum; lowNum <= highNum; highNum--){
+
+        if(highNum % mult == 0){
+            console.log(highNum);
+        }
+
+    }
+}
+
+countMult(2,9,3);
+
+//This is based on “Flexible Countdown”. The parameter names are not as helpful, 
+//but the problem is essentially identical; don’t be thrown off! 
+//Given 4 parameters (param1,param2,param3,param4), print the multiples of param1, 
+//starting at param2 and extending to param3. One exception: if a multiple is equal to param4, 
+//then skip (don’t print) it. Do this using a WHILE. Given (3,5,17,9), 
+//print 6,12,15 (which are all of the multiples of 3 between 5 and 17, and excluding the value 9).
+
+function finalCountDown(param1, param2, param3, param4)
+{
+    while(param2 < param3)
+    {
+        param2 = param2 +1 
+        if(param2 % param1 == 0){
+            if(param2 == param4)
+            {
+                continue;
+            }
+            console.log(param2);
+        }
+
+    }
+}
+
+finalCountDown(3,5,17,9);
