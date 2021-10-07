@@ -115,5 +115,3 @@ function MaxMinAvg(arr)
     console.log("Min: " + min);
     console.log("Avg: " + avg);
 }
-
-//
