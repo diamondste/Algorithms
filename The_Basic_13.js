@@ -8,8 +8,6 @@ function print1to255()
     }
 
 }
-
-
 //Print sum 0-255
 //Print integers from 0 to 255, and with each integer print the sum so far.
 function printSum0to255()
